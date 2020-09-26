@@ -1,0 +1,7 @@
+<div *ngIf="item.icon;then completado else cargando"></div>
+<ng-template #completado>
+    <span class="font-cap">{{item.generation}}</span><br><img src="{{item.icon}}" style="height:50px;">
+</ng-template>
+<ng-template #cargando>
+    <span class="font-cap">Cargando...</span><br><img src="https://pngimg.com/uploads/pokeball/pokeball_PNG8.png" style="height:50px;">
+</ng-template>
