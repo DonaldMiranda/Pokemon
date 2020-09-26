@@ -1,4 +1,4 @@
-<div *ngIf="CatalogPokemon!=''" class="text-center">
+<div *ngIf="CatalogPokemon" class="text-center">
     <h1 class="pokemon-font">
         <img src="https://pngimg.com/uploads/pokeball/pokeball_PNG8.png" class="img-fluid" alt="Pokeball" id="pokeball">
         Pokedex</h1>
@@ -24,7 +24,7 @@
         </div>
     </div>
 </div>
-<div *ngIf="CatalogPokemon==''" id="loading" class="text-center">
+<div *ngIf="!CatalogPokemon" id="loading" class="text-center">
     <h1><img src="https://pngimg.com/uploads/pokeball/pokeball_PNG8.png" class="img-fluid" alt="Pokeball"
             id="pokeball">Cargando..</h1>
 </div>

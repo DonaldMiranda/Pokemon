@@ -22,7 +22,7 @@ export class CatalogComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router
   ) {
-    this.CatalogPokemon = [],
+    this.CatalogPokemon =[],
     this.Config = {
       currentPage: 1,
       itemsPerPage: 10,
@@ -50,7 +50,9 @@ export class CatalogComponent implements OnInit {
             image: Global.url_image + (i + 1) + ".png"
           }
           this.CatalogPokemon.push(pokemon);
+      
         }
+        console.log(this.CatalogPokemon);
       }, error => {
         console.log(<any>error)
       }
